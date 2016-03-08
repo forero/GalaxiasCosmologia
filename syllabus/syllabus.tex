@@ -1,0 +1,298 @@
+\documentclass[letterpaper,10pt,onecolumn]{article}
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{mathrsfs}
+
+\usepackage{enumitem}
+\usepackage[pdftex]{color,graphicx}
+\usepackage{hyperref}
+\usepackage{listings}
+\usepackage{calligra}
+\usepackage{url}
+%\usepackage{algpseudocode} 
+\DeclareMathAlphabet{\mathcalligra}{T1}{calligra}{m}{n}
+\DeclareFontShape{T1}{calligra}{m}{n}{<->s*[2.2]callig15}{}
+\newcommand{\scripty}[1]{\ensuremath{\mathcalligra{#1}}}
+\lstloadlanguages{[5.2]Mathematica}
+\setlength{\oddsidemargin}{0cm}
+\setlength{\textwidth}{490pt}
+\setlength{\topmargin}{-40pt}
+\addtolength{\hoffset}{-0.3cm}
+\addtolength{\textheight}{4cm}
+
+\begin{document}
+\begin{center}
+
+\includegraphics[width=490pt]{header.png}\\[0.5cm]
+
+\textsc{\LARGE Cosmolog\'ia Moderna}\\[0.1cm]
+
+\large Jaime E. Forero Romero\\[0.5cm]
+
+\end{center}
+
+\large \noindent\textsc{Nombre del curso:}  Cosmolog\'ia Moderna%Aqui  
+                                %nombre del curso 
+  
+\noindent\textsc{C\'odigo del curso:} FISI XXXX %Aqui el codigo del
+                                %curso 
+
+\noindent\textsc{Unidad acad\'emica:} Departamento de F\'isica
+
+\noindent\textsc{Periodo acad\'emico:} 201620 %Aqui el periodo,
+                                %p.ej. 201510 
+
+\noindent\textsc{Horario:} Ma y Ju, 8:30 a 9:50 %Aqui el horario, %p.ej. Ma y Ju, 10:00 a 11:20 
+
+\noindent\rule{\textwidth}{1pt}\\[-0.3cm]
+
+\normalsize \noindent\textsc{Nombre profesor(a) principal:} Jaime
+E. Forero Romero%Aqui nombre del profesor principal 
+
+\noindent\textsc{Correo electr\'onico:}
+\href{mailto:je.forero@uniandes.edu.co}{\nolinkurl{je.forero@uniandes.edu.co}}
+%Cambie address por su direccion de correo uniandes 
+
+%\noindent\textsc{Horario y lugar de atenci\'on:} Ma y Ju 10:00 a
+%11:00 AM, Oficina Ip208 %Aqui su horario y lugar de atencion, p.ej. Vi,
+                     %15:00 a 17:00, Oficina Ip102  
+%\\[-0.1cm]
+
+\noindent\textsc{Nombre profesor(a) complementario(a):} %Aqui nombre
+                                %del profesor complementario si aplica 
+
+\noindent\textsc{Correo electr\'onico:}
+\href{mailto:@uniandes.edu.co}{\nolinkurl{@uniandes.edu.co}}
+
+%Cambie address por direccion de correo uniandes del profesor
+%complementario 
+
+%\noindent\textsc{Horario y lugar de atenci\'on:} %Aqui horario y
+%lugar de atencion del profesor complementario, p.ej. Vi, 15:00 a
+%17:00, Oficina Ip102 
+%\\[-0.1cm]
+%Repetir esto en caso de varios profesores complementarios
+
+%\noindent\textsc{Nombre monitor(a):} %Aqui nombre del monitor si aplica
+
+%\noindent\textsc{Correo electr\'onico:}
+%\href{mailto:address@uniandes.edu.co}{\nolinkurl{address@uniandes.edu.co}}
+%%Cambie address por direccion de correo uniandes del monitor 
+
+%\noindent\textsc{Horario y lugar de atenci\'on:} %Aqui horario y
+%lugar de atencion del monitor, p.ej. Vi, 15:00 a 17:00, Oficina Ip102 
+
+\noindent\rule{\textwidth}{1pt}\\[-0.1cm]
+
+\newcounter{mysection}
+\addtocounter{mysection}{1}
+
+\noindent\textbf{\large \Roman{mysection} \quad Introducci\'on}\\[-0.2cm]
+
+%Este espacio es para hacer una introduccion al curso, evidenciando la
+%propuesta metodologica. Debe ser clara y precisa. 
+
+\noindent\normalsize 
+La cosmología contemporánea ataca problemas de física fundamental que
+retan nuestras concepciones sobre materia, energía, espacio y
+tiempo. 
+El curso ofrece una perspectiva general sobre los fundamentos
+teóricos, observacionales y computacionales de esta área del
+conocimiento. 
+Comenzamos con elementos de la  cosmología Einsteniana y
+terminamos tratando los grandes descubrimientos  recientes en la
+actualidad,  la era de oro de la cosmología. Nos concentramos  en los
+desarrollos de los últimos cincuenta años, en donde se ha avanzado en
+la cosmología temprana, o sea, en entender los primeros trescientos
+mil años  del universo. Se enfatizan los aspectos observacionales y
+fenomenológicos y  se desarrolla una familiaridad con ciertas
+herramientas del cálculo. Se  enfatiza la claridad en los conceptos
+físicos, y no los formalismos. Se  introducen conceptos avanzados en
+la medida que sean necesarios para  entender y aplicar a los temas que
+se cubren. Usaremos conceptos extraídos  de astronomía, mecánica
+clásica, relatividad general, termodinámica, física  estadística,
+física nuclear, partículas elementales y campos cuánticos.  
+
+
+Se asume que los estudiantes de este curso ya han cursado Mec\'anica
+Cu\'antica I (FISI-3010).
+\\[0.1cm]
+
+\stepcounter{mysection}
+\noindent\textbf{\large \Roman{mysection} \quad Objetivos}\\[-0.2cm]
+
+%En este espacio se debe precisar el ente visor del curso y el
+%proposito ideal al finalizar el curso. 
+\noindent\normalsize Los objetivos principales del curso son:
+
+\begin{itemize}
+
+        \item Presentar los fundamentos f\'isicos y matem\'aicos del
+          modelo cosmol\'ogico est\'andar. \\[-0.6cm]
+        \item Presentar las bases astron\'omicas de
+          la cosmolog\'ia observacional moderna.\\[-0.6cm]
+        \item Estudiar la motivaci\'on cient\'ifica para los
+          experimentos de siguiente generaci\'on en cosmolog\'ia
+          observacional. \\[-0.2cm]
+\end{itemize}
+
+\stepcounter{mysection}
+\noindent\textbf{\large \Roman{mysection} \quad Competencias a
+  desarrollar}\\[-0.2cm] 
+
+%En este espacio se describen las habilidades que el estudiante desarrollara en el transcurso del curso.
+
+\noindent\normalsize Al finalizar el curso, se espera que el
+estudiante est\'e en capacidad de: 
+
+\begin{itemize}
+\item Utilizar el formalismo matem\'atico adecuado para inferir distancias y
+  tiempos cosmol\'ogicos a partir de mediciones observacionales. \\[-0.6cm]
+\item Identificar la importancia de diferentes tipos de observaciones
+  astron\'omicas en la medici\'on de par\'ametros cosmol\'ogicos.
+\\[-0.6cm] 
+\item Comprender los planteamientos y m\'etodos utilizados publicaciones
+  cient\'ificas en el \'area de cosmolog\'ia observacional moderna. \\[-0.2cm]  
+\end{itemize}
+
+\stepcounter{mysection}
+\noindent\textbf{\large \Roman{mysection} \quad Contenido por
+  semanas}\\[-0.2cm] 
+
+%Se expone de forma ordenada toda la tematica a tratar del curso. Debe planearse para 15 semanas.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\noindent\normalsize\textbf{\textsc{Semana 1.}}
+Introducci\'on. Fundamentos observacionales de la cosmolog\'ia. 
+\\[-0.3cm]
+
+\noindent\textbf{\textsc{Semana 2.}} 
+Un universo en expansi\'on. Gravedad Newtoniana y Einsteniana.
+\\[-0.3cm]  
+
+\noindent\textbf{\textsc{Semana 3.}} 
+Consecuencias de la expansi\'on del Universo. Mediciones de distancias
+y tiempos cosmol\'ogicos.
+\\[-0.3cm]  
+
+\noindent\textbf{\textsc{Semana 4.}} 
+Historia t\'ermica del Universo.
+\\[-0.3cm]  
+
+\noindent\textbf{\textsc{Semana 5.}}
+\'Exitos y problemas del modelo est\'andar cosmol\'ogico. Motivaci\'on
+para la Inflaci\'on.
+\\[-0.3cm]
+
+\noindent\textbf{\textsc{Semana 6.}} 
+Inestabilidad gravitacional.
+\\[-0.3cm]  
+
+\noindent\textbf{\textsc{Semana 7.}} 
+Descripci\'on de fluctuaciones de densidad. 
+\\[-0.3cm] 
+
+\noindent\textbf{\textsc{Semana 8.}} 
+Crecimientos de fluctuaciones de densidad. 
+\\[-0.3cm]  
+
+\noindent\textbf{\textsc{Semana 9.}} 
+Evoluci\'on no lineal de la formaci\'on de estructura. 
+\\[-0.3cm] 
+
+\noindent\textbf{\textsc{Semana 10.}}  
+Simulaciones de la formaci\'on de estructura del Universo.
+\\[-0.3cm] 
+
+\noindent\textbf{\textsc{Semana 11.}}  
+Bariogénesis. Asimetría materia-antimateria.
+\\[-0.3cm] 
+
+\noindent\textbf{\textsc{Semana 12.}}  
+El universo inflacionario. La singularidad inicial.
+\\[-0.3cm]  
+
+\noindent\textbf{\textsc{Semana 13.}} 
+Herramientas de la astronom\'ia extragal\'actica.
+\\[-0.3cm]  
+
+\noindent\textbf{\textsc{Semana 14.}} 
+Galaxias como trazadores de la estructura a gran escala del Universo. 
+\\[-0.3cm] 
+
+\noindent\textbf{\textsc{Semana 15.}} 
+Nuevos experimentos de cosmolog\'ia observacional.
+\\[-0.1cm]  
+
+
+\stepcounter{mysection}
+\noindent\textbf{\large \Roman{mysection} \quad
+  Metodolog\'ia}\\[-0.2cm] 
+
+%Se describen las tecnicas y metodos para el desarrollo exitoso del curso.
+
+\noindent\normalsize Todas las clases se har\'an con presentaciones en
+el tablero para desarrollar los conceptos y plantear ejercicios de
+aplicaci\'on.\\[0.1cm]
+
+\stepcounter{mysection}
+\noindent\textbf{\large \Roman{mysection} \quad Criterios de
+  evaluaci\'on}\\[-0.2cm] 
+
+El curso tendr\'a tres parciales ($20 \%$ cada uno), entrega
+peri\'odica de ejercicios ($20\%$) y un ex\'amen final ($20\%$). \\[0.1cm]
+
+
+\stepcounter{mysection}
+\noindent\textbf{\large \Roman{mysection} \quad
+  Bibliograf\'ia}\\[-0.2cm] 
+
+%Indicar los libros y la documentacion guia.
+
+\noindent\normalsize Bibliograf\'ia principal:
+
+\begin{itemize}
+\item P. Schneider \textit{Extragalactic Astronomy and
+  Cosmology: An Introduction},
+  2006. (Biblioteca General - 523.112) \url{http://link.springer.com.ezproxy.uniandes.edu.co:8080/book/10.1007%2F978-3-540-33175-9})\\[-0.6cm]
+\item J. A. Peacock, \textit{Cosmological Physics}, 2002. (Biblioteca
+  General,  523.1 P211)\\[-0.6cm]
+\item S. Dodelson \textit{Modern Cosmology}, 2003. (Biblioteca
+  General, 523.1 D522)\\[-0.2cm]
+\end{itemize} 
+
+\noindent\normalsize Bibliograf\'ia complementaria:
+
+\begin{itemize}
+\item E. W. Kolb and M. S. Turner \textit{The Early Universe},
+  1990. (Biblioteca General  523.1 K541)\\[-0.6cm]
+\item A. Liddle, \textit{An introduction to modern cosmology}, 2003.
+  (Biblioteca General, 523.1 L322 2003. )\\[-0.2cm] 
+\end{itemize}
+
+
+\end{document}
